@@ -1,29 +1,70 @@
 
 
 
-
 body {
-    background-color: #FFFFFF;
-    margin: 0;
+    background-color: antiquewhite;
+    margin: 0px;
     padding: 0;
-    font-family: 'Roboto', Arial;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    display: flex;
+    flex-direction: column;
+    
 }
 
+/*nav section */
 
 .navbar {
     background-color: #1f2937;
     display: flex;
-    color: #f9faf8;
+    width: 100%;
     background-color: #1f2937;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: space-between;
+    word-spacing: 5%;
+    padding-bottom: 0;
 }
 
-.header-logo img {
-    width: 80px;
-    height: 80px;
-    display: flex;
-    align-items: baseline;
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    margin: 0px;
+    margin-right: auto;
+    padding: 0;
+    transition: transform .7s ease-in-out;
 }
+
+.logo img:hover {
+    transform: rotate(360deg);
+}
+
+.nav-link {
+    
+    margin: 0px;
+    padding: 0px;
+    font-size: 24px;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+}
+
+.nav-link a {
+    margin-left: 1em;
+    margin-right: 1em;
+    color: #e5e7eb;
+    padding: 20px;
+    
+}
+
+.nav-link a:hover {
+    background-color: aquamarine;
+    color: black;
+    font-weight: 900;
+    
+}
+
+/*hero section */
 
 
 .hero {
@@ -60,18 +101,15 @@ body {
 
 }
 
-.hero-logo {
+.hero-title {
     color: #f9faf8;
     font-size: 48px;
     font-weight: bolder;
-    font-family: 'Roboto', arial;
 }
 
 .hero-sub {
     font-size: 18px;
     color: #e5e7eb;
-    font-family: 'Roboto', arial;
-    font-weight: bold;
 }
 
 .hero-button {
@@ -87,6 +125,7 @@ body {
     color: #f9faf8;
     font-weight: bold;
     font-size: 14px;
+    text-decoration: none;
     
 }
 
@@ -94,3 +133,55 @@ a:link { text-decoration: none; }
 a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
 a:active { text-decoration: none;}
+
+
+/* talent section */
+
+.talent-container {
+    display: flex;
+    background-color: antiquewhite;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: opx 24px 96px 24px;
+}
+
+
+.tilly-talents {
+    text-align: center;
+    font-size: 28px;
+    color: #503000;
+}
+
+
+.talents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    gap: 2px;
+    font-size: 26px;
+    color: #9e640d;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+.talent-slide {
+    width: 200px;
+    height: 200px;
+    border: 12px solid #9e640d;
+    box-shadow: 1px 1px 1px #1f2937;
+    object-fit: cover;
+    border-radius: 32px;
+}
+
+.talent-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #503000;
+    text-align: center;
+    flex-wrap: wrap;
+    max-width: 250px;
+    text-shadow: none;
+
+}
+
